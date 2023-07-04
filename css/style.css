@@ -37,7 +37,8 @@
     box-shadow:0px 0px 10px 5px rgba(0, 0, 0, 0.3) ;
     position: relative;
     /*You can remove this property to how hover effect work */
-    overflow:hidden;       
+    overflow:hidden;  
+    cursor:pointer;     
  }
  .box1{
     /* background: red; */
@@ -47,7 +48,8 @@
     box-shadow:0px 0px 10px 5px rgba(0, 0, 0, 0.3) ;
     position: relative;
     /*You can remove this property to how hover effect work */
-    overflow:hidden;   
+    overflow:hidden;  
+    cursor: pointer; 
  }
  .b1{
      border-bottom-right-radius: 30%;
@@ -155,9 +157,126 @@
      border-bottom-left-radius: 30%;
     transition-property:all;
     transition-duration:0.6s ;
-    transition-timing-function: linear;
+    transition-timing-function: linear;   
+}
+.overlay8{
+    opacity:0;
+    transition-duration:0.2s !important ;
 
+}
+.overlay11 ,.overlay12,.overlay13,.overlay14,.overlay15,.overlay16{
+    /* opacity:0; */
+    transition-duration:0.2s !important ;
+
+}
+.overlay9{
+    opacity:0;
+    transition-duration:0.3s !important ;
+
+}
+.box:hover   > .overlay8,.box:hover   > .overlay9{
+    opacity: 1;
+}
+.a8_1{
+    left: 50px !important;
+}
+.a8_2{
+    left: 350px !important;
+}
+.box:hover > .overlay8 .a8_1{
+    left: 90px !important;
+}
+.box:hover > .overlay8 .a8_2{
+    left: 140px !important;
+}
+.a8_1,.a8_2{
+    transition: all 0.4s linear ;
+}
+.a9_1,.a9_2{
+    transform: scale(1.5,1.5);
+    transition: all 0.1s linear;
+}
+.box:hover .a9_1,.box:hover  .a9_2{
+    transform: scale(1,1);
+}
+.a10_2{
+    transform: scale(0,0);
+    transition: all 0.1s linear;
+}
+.box:hover .a10_2{
+    transform: scale(1,1);
+}
+.a10_1{
+    transform-origin: 62px   center;
+    transform: rotateZ(0deg) scale(0,0);
+    transition: all 0.5s linear;
+}
+.box:hover .a10_1{
+    transform: rotateZ(360deg) scale(1,1);
+
+}
+.a11_1{
+    transform-origin: -137px center;
+    transform:rotateZ(180deg);
+}
+.a11_2{
+    transform-origin: 151px center;
+    transform:rotate(180deg);
+}
+.box:hover .a11_1 ,.box:hover .a11_2{
+    transform: rotateZ(0deg);
+}
+.cc{
+    transition: all 0.4s linear;
+}
+.a12_1,.a12_2{
+    border-radius: 0px !important;
+    transition: all 0.9s linear;
+}
+.box:hover .a12_1 ,.box:hover .a12_2{
+    border-radius: 40px !important;
+}
+.a13_1,.a13_2{
+    border-radius: 0px !important;
+    transform: rotateZ(0deg) !important;
+    transition: all 0.2s linear;
     
+}
+.box:hover .a13_1 ,.box:hover .a13_2{
+    transform: rotateZ(360deg) !important;
+}
+.a14_1,.a14_2{
+    border-radius: 0px !important;
+    transform: rotateZ(360deg) !important;
+    transition: all 0.2s linear;
+    
+}
+.box:hover .a14_1 ,.box:hover .a14_2{
+    transform: rotateZ(0deg) !important;
+}
+.a15_1,.a15_2{
+    border-radius: 0px !important;
+    transition: all 0.3s linear;
+    transform: scale(0,1);
+    
+}
+.box:hover .a15_1 ,.box:hover .a15_2{
+    transform: scale(1,1);
+
+}
+.a16_1{
+    transition: all 0.3s linear 0s;
+}
+.a16_2{
+    transition: all 0.3s linear 0.2s;
+}
+.a16_1,.a16_2{
+    transform: scale(0,0);
+    
+}
+.box:hover .a16_1 ,.box:hover .a16_2{
+    transform: scale(1,1);
+
 }
 /*
 desecedent select
